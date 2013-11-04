@@ -1,0 +1,176 @@
+Welcome to Git (version 1.8.4-preview20130916)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+Rucha@RUCHA-PC ~
+$ d:
+sh.exe": d:: command not found
+
+Rucha@RUCHA-PC ~
+$ cd d:
+
+Rucha@RUCHA-PC /d
+$ cd othergit
+
+Rucha@RUCHA-PC /d/othergit (master)
+$ cd project1
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git commit -m "some comment"
+[master (root-commit) 8ed336a] some comment
+ 1 file changed, 1 insertion(+)
+ create mode 100644 One.txt
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push "RepoTest"
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'RepoTest' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git config --global push.default sinple
+
+Rucha@RUCHA-PC /d/othergit/project1
+$ git config --global push.default simple
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push "RepoTest"
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream RepoTest master
+
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push --set-upstream RepoTest master
+fatal: 'RepoTest' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git remote add RepoTest https://github.com/RuchaSushant/RepoTest.git
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push RepoTest
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream RepoTest master
+
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$ git push --set-upstream RepoTest master
+Username for 'https://github.com': RuchaSushant
+Password for 'https://RuchaSushant@github.com':
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 234 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/RuchaSushant/RepoTest.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from RepoTest.
+
+Rucha@RUCHA-PC /d/othergit/project1 (master)
+$
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing on
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local b
+
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
